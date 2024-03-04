@@ -1,5 +1,7 @@
+[![Star on GitHub](https://img.shields.io/github/stars/carloscgm/multi_wheel_number.svg?style=social&label=Star)](https://github.com/carloscgm/multi_wheel_number)
 
-![Demo](assets/demo.gif)
+
+![Demo](https://raw.githubusercontent.com/carloscgm/multi_wheel_number/main/assets/demo.gif)
 
 A widget that displays a number with a single wheel for each number, controlling the animations so that the number changes are smooth and user-friendly.
 
@@ -80,7 +82,7 @@ This widget needs:
 
 >**Highly recommended**: Test some values of fontSize and itemExtend to get the effect you want. 
 
-### Parameters
+## Parameters
 
 |                |                          |DESCRIPTION|
 |----------------|-------------------------------|-----------------------------|
@@ -92,3 +94,7 @@ This widget needs:
 |curve|`'optional'`|The curve of the animation, by default: `Curves.ease`|
 |duration|`'optional'`|The duration of the animation, by default: `const  Duration(milliseconds:  900)`|
 |spacingBetweenNumbers|`'optional'`|The space between the wheels, fontSize and itemExtends can produce a unwanted space, fix it with this parameter, by default: `0.35`|
+
+
+You can custom the widget as you wish with Text Style and wraping in a Container, some examples:
+![Demo](https://raw.githubusercontent.com/carloscgm/multi_wheel_number/main/assets/examples.gif)

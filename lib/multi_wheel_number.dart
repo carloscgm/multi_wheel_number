@@ -12,7 +12,7 @@ class MultiWheelNumber extends StatefulWidget {
   final int? figures;
   final double itemExtent;
   final Curve curve;
-  final Duration? duration;
+  final Duration duration;
   final double spacingBetweenNumbers;
 
   const MultiWheelNumber({
@@ -21,7 +21,7 @@ class MultiWheelNumber extends StatefulWidget {
     this.figures,
     required this.itemExtent,
     this.curve = Curves.ease,
-    this.duration,
+    this.duration = const Duration(milliseconds: 900),
     required this.fontSize,
     this.spacingBetweenNumbers = 0.35,
     required this.number,
@@ -57,7 +57,7 @@ class _MultiWheelNumberState extends State<MultiWheelNumber> {
     super.initState();
     numberToShow = widget.number;
     figuresToShow = widget.figures ?? getFiguresFrom(numberToShow);
-    duration = widget.duration ?? const Duration(milliseconds: 900);
+    duration = widget.duration;
 
     numberList = List.generate(
       10,
