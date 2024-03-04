@@ -1,6 +1,6 @@
 name: multi_wheel_number
 description: "A widget that displays a number with a single wheel for each number, controlling the animations so that the number changes are smooth and user-friendly."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/carloscgm
 
 environment:
